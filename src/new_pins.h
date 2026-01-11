@@ -576,14 +576,14 @@ typedef enum ioRole_e {
 	IOR_PWM_ScriptOnly_n,
 	//iodetail:{"name":"Counter_f",
 	//iodetail:"title":"TODO",
-	//iodetail:"descr":"",
+	//iodetail:"descr":"Counts pulses on falling edge (transition from high to low). Each transitions adds 1 to linked channel.",
 	//iodetail:"enum":"IOR_Counter_f",
 	//iodetail:"file":"new_pins.h",
 	//iodetail:"driver":""}
 	IOR_Counter_f,
 	//iodetail:{"name":"Counter_r",
 	//iodetail:"title":"TODO",
-	//iodetail:"descr":"",
+	//iodetail:"descr":"Counts pulses on rising edge (transition from low to high). Each transitions adds 1 to linked channel.",
 	//iodetail:"enum":"IOR_Counter_r",
 	//iodetail:"file":"new_pins.h",
 	//iodetail:"driver":""}
@@ -616,6 +616,20 @@ typedef enum ioRole_e {
 	//iodetail:"file":"new_pins.h",
 	//iodetail:"driver":"HLW8112SPI"}
 	IOR_HLW8112_SCSN,
+	//iodetail:{"name":"RCRecv",
+	//iodetail:"title":"RCRecv Pin",
+	//iodetail:"descr":"433MHz RC receiver input (uses internal pull-up).",
+	//iodetail:"enum":"IOR_RCRecv",
+	//iodetail:"file":"new_pins.h",
+	//iodetail:"driver":"RC"}
+	IOR_RCRecv,
+	//iodetail:{"name":"RCRecv_nPup",
+	//iodetail:"title":"RCRecv_nPup Pin",
+	//iodetail:"descr":"433MHz RC receiver input without internal pull-up.",
+	//iodetail:"enum":"IOR_RCRecv_nPup",
+	//iodetail:"file":"new_pins.h",
+	//iodetail:"driver":"RC"}
+	IOR_RCRecv_nPup,
 	//iodetail:{"name":"Total_Options",
 	//iodetail:"title":"TODO",
 	//iodetail:"descr":"Current total number of available IOR roles",
