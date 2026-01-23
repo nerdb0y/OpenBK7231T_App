@@ -1,2 +1,2 @@
-void SlaveClock_onEverySec();
-void SlaveClock_init();
+void PulseClock_onEverySec();
+void PulseClock_init();

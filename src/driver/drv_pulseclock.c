@@ -13,11 +13,11 @@
 #include "../libraries/obktime/obktime.h"	// for time functions
 
 
-void SlaveClock_onEverySec() {
-
+void PulseClock_onEverySec() {
+    addLogAdv(LOG_INFO, LOG_FEATURE_DRV, "Pulse Clock EverySec.\n");
 }
 
-void SlaveClock_init() {
-
+void PulseClock_init() {
+    addLogAdv(LOG_INFO, LOG_FEATURE_DRV, "Pulse Clock Init.\n");
 }
 
