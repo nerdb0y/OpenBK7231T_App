@@ -577,6 +577,7 @@
 #define ENABLE_DRIVER_BMPI2C					1
 #define ENABLE_DRIVER_NEO6M					1
 #define ENABLE_DRIVER_BRIDGE					1
+#define ENABLE_DRIVER_SLAVECLOCK				1
 
 
 // #define ENABLE_OBK_BERRY						1

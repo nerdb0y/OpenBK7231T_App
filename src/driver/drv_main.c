@@ -1386,7 +1386,22 @@ static driver_t g_drivers[] = {
 	false,                                   // loaded
 	},
 #endif
-	//{ "", NULL, NULL, NULL, NULL, NULL, NULL, NULL, false },
+#if ENABLE_DRIVER_SLAVECLOCK
+	//drvdetail:{"name":"Slave Clock",
+	//drvdetail:"title":"TODO",
+	//drvdetail:"descr":"TODO",
+	//drvdetail:"requires":""}
+	{ "SlaveClock",                              // Driver Name
+	SlaveClock_init,	                      // Init
+	SlaveClock_onEverySec,                                    // onEverySecond
+	NULL,                                    // appendInformationToHTTPIndexPage
+	NULL, 						             // runQuickTick
+	NULL,				                     // stopFunction
+	NULL,						             // onChannelChanged
+	NULL,                                    // onHassDiscovery
+	false,                                   // loaded
+	},
+#endif//{ "", NULL, NULL, NULL, NULL, NULL, NULL, NULL, false },
 };
 
 
