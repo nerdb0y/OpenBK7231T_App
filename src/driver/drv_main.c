@@ -1401,7 +1401,8 @@ static driver_t g_drivers[] = {
 	NULL,                                    // onHassDiscovery
 	false,                                   // loaded
 	},
-#endif//{ "", NULL, NULL, NULL, NULL, NULL, NULL, NULL, false },
+#endif
+//{ "", NULL, NULL, NULL, NULL, NULL, NULL, NULL, false },
 };
 
 
