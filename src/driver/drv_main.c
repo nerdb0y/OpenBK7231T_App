@@ -10,6 +10,7 @@
 #include "drv_local.h"
 #include "drv_ntp.h"
 #include "drv_deviceclock.h"
+#include "drv_pulseclock.h"
 #include "drv_public.h"
 #include "drv_ssdp.h"
 #include "drv_test_drivers.h"
@@ -1386,14 +1387,14 @@ static driver_t g_drivers[] = {
 	false,                                   // loaded
 	},
 #endif
-#if ENABLE_DRIVER_SLAVECLOCK
-	//drvdetail:{"name":"Slave Clock",
+#if ENABLE_DRIVER_PULSECLOCK
+	//drvdetail:{"name":"Pulse Clock",
 	//drvdetail:"title":"TODO",
 	//drvdetail:"descr":"TODO",
 	//drvdetail:"requires":""}
-	{ "SlaveClock",                              // Driver Name
-	SlaveClock_init,	                      // Init
-	SlaveClock_onEverySec,                                    // onEverySecond
+	{ "PulseClock",                              // Driver Name
+	PulseClock_init,	                      // Init
+	PulseClock_onEverySec,                                    // onEverySecond
 	NULL,                                    // appendInformationToHTTPIndexPage
 	NULL, 						             // runQuickTick
 	NULL,				                     // stopFunction
