@@ -125,6 +125,7 @@
 #define ENABLE_DRIVER_TINYIR_NEC				1
 // allow testing, remove before merging
 //#define ENABLE_DRIVER_DCF77					1
+#define ENABLE_DRIVER_PULSECLOCK				1
 
 #elif WINDOWS
 
@@ -645,6 +646,7 @@
 #define ENABLE_DRIVER_DS1820					1
 #define ENABLE_DRIVER_TUYAMCU					1
 #define ENABLE_DRIVER_MDNS						1
+#define ENABLE_DRIVER_PULSECLOCK				1
 
 //#define ENABLE_DRIVER_DCF77					1
 
